@@ -1,0 +1,31 @@
+{
+  "name": "mern-sql-pos",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon backend/server.js\" \"cd frontend && npm start\"",
+    "start": "node backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mailersend": "^2.3.0",
+    "mailtrap": "^3.4.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "twilio": "^5.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
